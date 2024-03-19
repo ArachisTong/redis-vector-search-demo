@@ -9,3 +9,6 @@ echo "export PATH=/usr/local/Caskroom/redis-stack-server/7.2.0-v9/bin:$PATH">> ~
 
 # start server
 nohup redis-stack-server >redis-stack-server.log &
+
+# test server
+redis-cli -h localhost -p 6379 -a foobared
