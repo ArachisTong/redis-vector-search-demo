@@ -8,6 +8,7 @@ brew install redis-stack
 echo "export PATH=/usr/local/Caskroom/redis-stack-server/7.2.0-v9/bin:$PATH">> ~/.bashrc
 
 # start server
+cd /usr/local/Caskroom/redis-stack-server/7.2.0-v9/bin/
 nohup redis-stack-server >redis-stack-server.log &
 
 # test server
